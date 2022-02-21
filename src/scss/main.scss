@@ -1,79 +1,153 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.card-page{
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.card-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+.card {
+  width: 30%;
+  height: 90vh;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 2s;
+  &:hover {
+    transform: rotateY(-180deg);
+  }
+  .front {
+    backface-visibility: hidden;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .back {
+    border-radius: 20px;
+    backface-visibility: hidden;
+    background-color: rgb(0, 140, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-}
-.card{
-    width: 30%;
-    height: 90vh;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 2s;
-    &:hover{
-        transform: rotateY(-180deg);
-    }
-    .front{
-        
-        backface-visibility: hidden;
-        height: 100%;
-        img{
-            width: 100%;
-            height: 100%;
-             border-radius: 20px;
-             object-fit: contain;
-
-        }
-    }
-    .back{
+    transform: rotateY(180deg);
+    .back-text {
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 2rem;
+      a {
+        color: white;
+        background-color: transparent;
+        border: 1px rgb(255, 255, 255) solid;
         border-radius: 20px;
-        backface-visibility: hidden;
-        background-color: rgb(105, 105, 105);
-        position: absolute;
-        top: 0;
-        left: 0;
-       height: 100%;
-       width: 100%;
-       transform: rotateY(180deg);
-        .back-text{
-            height: 75%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 2rem;
-            a{  
-                color: white;
-                background-color: transparent;
-                border: 1px rgb(255, 255, 255) solid;
-                border-radius: 20px;
-                padding: 1rem 2rem;
-                text-decoration: none;
-            }
-        }
-        .back-icons{
-            font-size: 3rem;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            i{
-                background-color: rgba(255, 255, 255, 0.596);
-                padding: 20px;
-                border-radius: 50%;
-                color: rgb(255, 8, 8);
-            }
-        }
+        padding: 1rem 2rem;
+        text-decoration: none;
+      }
     }
+    .back-icons {
+      font-size: 3rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      i {
+        background-color: rgba(255, 255, 255, 0.596);
+        padding: 20px;
+        border-radius: 50%;
+        color: rgb(255, 8, 8);
+      }
+    }
+  }
 }
 // ========================= main page =========================
+header {
+  min-width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    li {
+      width: 23%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+        padding: 0.5%;
+        border-radius: 20px;
+        
+
+      i {
+        color: white;
+        font-size: 1.3vw;
+      }
+      a {
+        font-size: 1.4vw;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      &:hover{
+          background-color: rgb(0, 140, 255);
+      }
+    }
+  }
+  .wlc-page {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5%;
+    border-radius: 20px;
 
 
-
-
+    i {
+      font-size: 1.2vw;
+      color: white;
+      padding-right: 4%;
+    }
+    a {
+      color: white;
+      font-size: 1.4vw;
+      text-decoration: none;
+      width: 90%;    
+      display: flex;
+      justify-content: space-around;  
+      align-items: center;
+    }
+    &:hover{
+        background-color: rgb(0, 140, 255);
+    }
+  }
+}
+// =============== about ============
+#about{
+    background-color: black;
+    color: white;
+    width: 70%;
+    padding: 8%;
+    margin: 5% auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    font-size: 1.4vw;
+}
