@@ -4,8 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
 }
 .card-page {
   width: 100%;
@@ -80,6 +80,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 6px 10px green;
 
   ul {
     width: 40%;
@@ -90,9 +91,8 @@ header {
       display: flex;
       justify-content: space-around;
       align-items: center;
-        padding: 0.5%;
-        border-radius: 20px;
-        
+      padding: 0.5%;
+      border-radius: 20px;
 
       i {
         color: white;
@@ -107,8 +107,8 @@ header {
         justify-content: space-around;
         align-items: center;
       }
-      &:hover{
-          background-color: rgb(0, 140, 255);
+      &:hover {
+        background-color: rgb(0, 140, 255);
       }
     }
   }
@@ -120,7 +120,6 @@ header {
     padding: 0.5%;
     border-radius: 20px;
 
-
     i {
       font-size: 1.2vw;
       color: white;
@@ -130,24 +129,54 @@ header {
       color: white;
       font-size: 1.4vw;
       text-decoration: none;
-      width: 90%;    
+      width: 90%;
       display: flex;
-      justify-content: space-around;  
+      justify-content: space-around;
       align-items: center;
     }
-    &:hover{
-        background-color: rgb(0, 140, 255);
+    &:hover {
+      background-color: rgb(0, 140, 255);
     }
   }
 }
+// ============== main-bg ============
+.main-bg {
+    position: relative;
+  width: 100%;
+  height: 100vh;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  a{
+      position: fixed;
+      bottom: 5%;
+      right: 2%;
+      color: rgb(0, 140, 255);
+      font-size: 4vw;
+      i{
+          animation: arrow 2s infinite alternate;
+      }
+      @keyframes arrow {
+          from{
+            transform:translateY(-3vh) ;
+          }
+         
+      }
+  }
+}
 // =============== about ============
-#about{
-    background-color: black;
-    color: white;
-    width: 70%;
-    padding: 8%;
-    margin: 5% auto;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px black;
-    font-size: 1.4vw;
+#about {
+  background-color: black;
+  color: white;
+  width: 70%;
+  padding: 8%;
+  margin: 6% auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px black;
+  font-size: 1.4vw;
+  h1,h3,p{
+      padding: 1% 0%;
+  }
 }
