@@ -80,7 +80,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 6px 10px green;
+  box-shadow: 0px 6px 10px rgb(0, 140, 255);
+  position: relative;
+  z-index: 1;
 
   ul {
     width: 40%;
@@ -93,6 +95,7 @@ header {
       align-items: center;
       padding: 0.5%;
       border-radius: 20px;
+      transition: 0.6s;
 
       i {
         color: white;
@@ -109,16 +112,19 @@ header {
       }
       &:hover {
         background-color: rgb(0, 140, 255);
+        transform: scale(1.1);
       }
     }
   }
   .wlc-page {
+      margin-right: 1%;
     width: 15%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0.5%;
     border-radius: 20px;
+    transition: 0.6s;
 
     i {
       font-size: 1.2vw;
@@ -136,6 +142,7 @@ header {
     }
     &:hover {
       background-color: rgb(0, 140, 255);
+      transform: scale(1.1);
     }
   }
 }
@@ -144,17 +151,26 @@ header {
     position: relative;
   width: 100%;
   height: 100vh;
+  background-color: black;
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   a{
       position: fixed;
+      z-index: 1;
       bottom: 5%;
       right: 2%;
       color: rgb(0, 140, 255);
       font-size: 4vw;
+      transition: 0.6s;
+      border-radius: 50%;
+      &:hover{
+          transform: scale(1.2);
+          opacity: 0.6;
+      }
+      
       i{
           animation: arrow 2s infinite alternate;
       }
@@ -174,9 +190,108 @@ header {
   padding: 8%;
   margin: 6% auto;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 3px 3px 10px rgb(0, 140, 255);
   font-size: 1.4vw;
   h1,h3,p{
       padding: 1% 0%;
   }
+}
+// ============ github =========
+#github{
+    p{
+        padding: 3%;
+        font-size: 2vw;
+        color: white;
+        text-align: center;
+        background-color: black;
+    }
+    
+    .images-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        background-color: black;
+       
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24%;
+            margin-top: 2%;
+            position: relative;
+            
+            &::after{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                content: "hello";
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.774);
+                font-size: 1.2vw;
+                text-align: center;             
+            }
+           &:nth-child(1){
+            &::after{               
+            content: "Newest Project, Hotel project. W3school clone (Responsive)";                
+            }
+           }
+           &:nth-child(2){
+            &::after{               
+            content: "Social media profile. W3school clone (Responsive)";                
+            }
+           }
+           &:nth-child(3){
+            &::after{               
+            content: "Home Design. W3school clone (Responsive)";                
+            }
+           }
+           &:nth-child(4){
+            &::after{               
+            content: "Youtube-clone (Responsive)";                
+            }
+           }
+           &:nth-child(5){
+            &::after{               
+            content: "Log in";                
+            }
+           }
+           &:nth-child(6){
+            &::after{               
+            content: "Periodic Table";                
+            }
+           }
+           &:nth-child(7){
+            &::after{               
+            content: "Gallery";                
+            }
+           }
+           &:nth-child(8){
+            &::after{               
+            content: "Second project. W3school clone";                
+            }
+           }
+           &:nth-child(9){
+            &::after{               
+            content: "First project. W3school clone";                
+            }
+           }
+           
+           
+
+            img{
+                width: 100%;
+                height: 100%;
+                border: 1px white solid;
+                border-radius: 20px;
+                
+            }
+        }
+        
+    }
 }
