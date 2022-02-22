@@ -20,9 +20,9 @@ body {
 }
 
 .card {
-  max-width: 40%;
+  max-width: 50%;
   min-width: 30%;
-  height: 40vw;
+  min-height: 60vh;
   position: relative;
   transform-style: preserve-3d;
   transition: 2s;
@@ -345,10 +345,6 @@ header .wlc-page:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .card-page .card {
-    height: 40vh;
-    width: 80%;
-  }
   .card-page .card .back .back-text {
     font-size: 3.3vw;
   }

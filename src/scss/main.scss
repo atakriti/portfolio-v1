@@ -394,7 +394,7 @@ header {
 @media only screen and (max-width:600px) {
   .card-page{
       .card{
-         
+         min-height: 40vh;
           .back{
               .back-text{
                   font-size: 3.3vw;
