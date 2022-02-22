@@ -197,6 +197,9 @@ header .wlc-page:hover {
 #about h1, #about h3, #about p {
   padding: 1% 0%;
 }
+#about img {
+  display: none;
+}
 
 #github p {
   padding-top: 1%;
@@ -381,7 +384,15 @@ header .wlc-page:hover {
 
   #about {
     height: 100vh;
+    width: 100%;
     font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #about img {
+    display: block;
+    width: 70%;
   }
 
   #github {

@@ -18,9 +18,11 @@ body {
   background-color: #000000;
 }
 .card {
-  max-width: 40%;
+  max-width: 50%;
   min-width: 30%;
-  height: 40vw;
+  
+  // max-height: 60%;
+  min-height: 60vh;
   position: relative;
   transform-style: preserve-3d;
   transition: 2s;
@@ -392,8 +394,7 @@ header {
 @media only screen and (max-width:600px) {
   .card-page{
       .card{
-          height: 40vh;
-          width: 80%;
+         
           .back{
               .back-text{
                   font-size: 3.3vw;
