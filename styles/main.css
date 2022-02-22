@@ -25,6 +25,7 @@ body {
   min-height: 60vh;
   position: relative;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: 2s;
 }
 .card:hover {
