@@ -54,6 +54,7 @@ body {
       align-items: center;
       font-size: 1.5vw;
       overflow: hidden;
+      
       a {
         color: white;
         background-color: transparent;
@@ -393,6 +394,9 @@ header {
           .back{
               .back-text{
                   font-size: 3.3vw;
+                  p{
+                    font-size: 3vw;
+                  }
 
               }
           }

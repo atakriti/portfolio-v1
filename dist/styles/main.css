@@ -1,17 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-@media only screen and (max-width: 600px) {
-  .card-page .card {
-    height: 40vh;
-    width: 80%;
-  }
-  .card-page .card .back .back-text {
-    font-size: 3.3vw;
-  }
-
-  header ul li a {
-    font-size: 3vw;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -33,9 +20,9 @@ body {
 }
 
 .card {
-  max-width: 60%;
-  min-width: 60%;
-  height: 90vh;
+  max-width: 40%;
+  min-width: 30%;
+  height: 40vw;
   position: relative;
   transform-style: preserve-3d;
   transition: 2s;
@@ -352,6 +339,72 @@ header .wlc-page:hover {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(black, #008cff);
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-page .card {
+    height: 40vh;
+    width: 80%;
+  }
+  .card-page .card .back .back-text {
+    font-size: 3.3vw;
+  }
+
+  header ul {
+    width: 70%;
+  }
+  header ul li {
+    width: 25%;
+  }
+  header ul li i {
+    font-size: 2vw;
+  }
+  header ul li a {
+    font-size: 3vw;
+  }
+  header .wlc-page {
+    width: 25%;
+  }
+  header .wlc-page i {
+    font-size: 2vw;
+  }
+  header .wlc-page a {
+    font-size: 2.5vw;
+  }
+
+  .main-bg a {
+    font-size: 10vw;
+  }
+
+  #about {
+    height: 100vh;
+    font-size: 3vw;
+  }
+
+  #github {
+    height: 100vh;
+    padding-bottom: 5%;
+  }
+  #github p {
+    font-size: 2.5vw;
+  }
+  #github .images-container {
+    height: 100%;
+  }
+  #github .images-container a {
+    width: 45%;
+  }
+  #github .images-container a::after {
+    display: none;
+  }
+
+  #contact {
+    height: 100vh;
+    font-size: 4vw;
+  }
+  #contact .contact-links {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
