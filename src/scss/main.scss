@@ -203,6 +203,9 @@ header {
   h1,h3,p{
       padding: 1% 0%;
   }
+  img{
+    display: none;
+  }
 }
 // ============ github =========
 
@@ -438,7 +441,15 @@ header {
   // about
   #about{
     height: 100vh;
+    width: 100%;
     font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+      display: block;
+      width: 70%;
+    }
   }
   // github
   #github{

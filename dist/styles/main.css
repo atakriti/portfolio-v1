@@ -349,6 +349,9 @@ header .wlc-page:hover {
   .card-page .card .back .back-text {
     font-size: 3.3vw;
   }
+  .card-page .card .back .back-text p {
+    font-size: 3vw;
+  }
 
   header ul {
     width: 70%;
