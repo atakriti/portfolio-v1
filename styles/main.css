@@ -332,6 +332,26 @@ header .wlc-page:hover {
   color: #f5f231;
 }
 
+.tools {
+  background-color: black;
+  padding: 10% 0%;
+  width: 100%;
+}
+.tools p {
+  text-align: center;
+  font-size: 2vw;
+  color: white;
+}
+.tools .tools-img {
+  display: flex;
+  justify-content: space-around;
+}
+.tools .tools-img img {
+  margin-top: 5%;
+  width: 10%;
+  height: 10vw;
+}
+
 ::-webkit-scrollbar {
   width: 1vw;
 }
@@ -418,6 +438,10 @@ header .wlc-page:hover {
   }
   #contact .contact-links {
     width: 50%;
+  }
+
+  .tools {
+    display: none;
   }
 }
 
