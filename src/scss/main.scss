@@ -380,6 +380,27 @@ header {
 
     }
   }
+  
+}
+// tools
+.tools{
+    background-color: black;
+    padding: 10% 0%;
+  p{
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+  }
+  width: 100%;
+  .tools-img{
+    display: flex;
+    justify-content: space-around;
+    img{
+      margin-top: 5%;
+      width: 10%;
+      height: 10vw;
+    }
+  }
 }
 // ================ Scrollbar =========
 ::-webkit-scrollbar {
@@ -478,5 +499,8 @@ header {
     .contact-links{
       width: 50%;
     }
+  }
+  .tools{
+    display: none;
   }
 }
